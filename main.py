@@ -112,9 +112,11 @@ def calc():
 
 
 def clear():
+    
     for i in trv.get_children():
-        trv.delete(i)
-        
+        trv.delete(i) #when buy new item --> delete all old item
+    
+    #when press New Receipt Button clear all Spinbox value  
     var1 = IntVar() 
     var2 = IntVar()
     var3 = IntVar() 
@@ -126,6 +128,8 @@ def clear():
     var1.set(0),var2.set(0),var3.set(0),var4.set(0),var5.set(0),var6.set(0),var7.set(0),var7.set(0)
     sb1.config(textvariable=var1), sb2.config(textvariable=var2),sb3.config(textvariable=var3), sb4.config(textvariable=var4)
     sb5.config(textvariable=var5), sb6.config(textvariable=var6),sb7.config(textvariable=var7), sb8.config(textvariable=var8)
+   
+    
     En_Phone.delete('0', END)
     En_Address.delete('0', END)
     En_Date.delete('0', END)
