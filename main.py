@@ -114,7 +114,7 @@ def calc():
 def clear():
     
     for i in trv.get_children():
-        trv.delete(i) #when buy new item --> delete all old item
+        trv.delete(i) 
     
     #when press New Receipt Button clear all Spinbox value  
     var1 = IntVar() 
